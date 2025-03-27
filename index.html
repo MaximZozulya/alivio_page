@@ -14,9 +14,7 @@
      <header class="header" aria-label="header">
         <div class="container">
           <div class="header__wrapper">
-            <svg class="logo" aria-label="logo">
-              <use href="assets/sprites.svg#logo-icon"></use>
-             </svg>
+            <img class="logo" src="assets/Logo.svg" alt="logo">
 
              <nav class="header__nav" aria-label="navigation">
               <ul class="header__nav-list" aria-label="navigation list">
@@ -35,6 +33,29 @@
         </div>
      </header>
      <!-- /.header -->
+
+     <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="menu-toggler-id" aria-label="open-close mobile navigation menu">
+          <img class="mobile-navigation__burger" src="assets/Burger.svg" alt="burger icon">
+        </label>
+
+        <input class="mobile-navigation__toggler" type="checkbox" name="toggler" id="menu-toggler-id">
+
+        <nav class="mobile-navigation__menu" aria-label="mobile navigation menu">
+          <ul class="mobile-navigation-list" aria-label="mobile navigation list">
+            <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="#about-id">Why Alivio</a></li>
+            <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="#success-id">Solutions</a></li>
+            <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="#product-id">Community</a></li>
+            <li class="mobile-navigation__item"><a class="mobile-navigation__link" href="#pricing-id">Pricing</a></li>
+          </ul>
+  
+          <label class="mobile-navigation__close" for="menu-toggler-id" aria-label="close mobile navigation menu">
+            <img class="mobile-navigation__cross" src="assets/Cross.svg" alt="cross icon">
+          </label>
+         </nav>
+      </div>
+     <!-- /.mobile-navigation -->
+
 
      <main>
       <section class="hero" aria-label="hero section" id="hero-id">
@@ -56,7 +77,8 @@
 
           <div class="about__content">
             <h2 class="about__title">Understand & Release the stress in 3 steps</h2>
-            <p class="about__description">Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.
+            <p class="about__description">
+              Alivio offers as many journals it takes, tackling different areas such as anxiety, overwhelmedness, sadness, or anger, and a variety of personal causes, to help you become aware of your emotions, and guide you in how to manage stress.
             </p>
           </div>
 
@@ -94,15 +116,15 @@
           <div class="success__wrapper">
             <div class="success__content">
               <h3 class="success__title">Let's hear about Kayla's success story</h3>
-              <p class="success__description" aria-label="success description">See how well Alivio works in a real customer’s life.</p>
+              <p class="success__description" aria-label="success description">
+                See how well Alivio works in a real customer’s life.
+              </p>
               <button class="btn">Let’s get started</button>
             </div>
 
             <div class="success__content-video">
               <img class="success__cover" src="assets/webp/imag-video.webp" alt="video cover image" >
-              <svg class="success__play-icon" aria-label="play icon">
-                <use href="assets/sprites.svg#play-icon"></use>
-               </svg>
+              <img class="success__play-icon" src="assets/video.svg" alt="play icon">
                <div class="success__gradient"></div>
             </div>
           </div>
